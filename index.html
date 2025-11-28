@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Harish Arcot | GenAI x AI/ML x Digital Workplace</title>
+
+  <style>
+    /* Floating gradient blobs */
+    .blob {
+      filter: blur(100px);
+      opacity: 0.5;
+      animation: float 12s infinite ease-in-out;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(-50px) translateX(40px); }
+    }
+
+    /* Glassy cards */
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Glow hover */
+    .glow:hover {
+      box-shadow: 0 0 20px rgba(168, 85, 247, 0.8),
+                  0 0 40px rgba(59, 130, 246, 0.8);
+      transform: translateY(-4px);
+    }
+
+    /* Smooth fade-in animation */
+    .fade {
+      opacity: 0;
+      animation: fadeIn 1.2s ease forwards;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+
+</head>
+
+<body class="bg-black text-gray-200 font-sans relative overflow-x-hidden">
+
+  <!-- FLOATING BLOBS -->
+  <div class="blob w-96 h-96 bg-purple-600 absolute top-10 left-10 rounded-full"></div>
+  <div class="blob w-96 h-96 bg-blue-600 absolute bottom-10 right-10 rounded-full"></div>
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 w-full py-6 px-10 flex justify-between items-center glass z-50">
+    <h1 class="text-xl font-bold text-purple-300 tracking-wide">Harish Arcot</h1>
+    <div class="flex gap-6 text-gray-300">
+      <a href="#about" class="hover:text-purple-400">About</a>
+      <a href="#skills" class="hover:text-purple-400">Skills</a>
+      <a href="#projects" class="hover:text-purple-400">Projects</a>
+      <a href="#genai" class="hover:text-purple-400">GenAI Lab</a>
+      <a href="#contact" class="hover:text-purple-400">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4 fade">
+    <h2 class="text-6xl md:text-7xl font-extrabold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent drop-shadow-lg">
+      Hybrid AI Leader
+    </h2>
+    <p class="text-xl text-gray-300 max-w-2xl mt-4">
+      GenAI • Agentic AI • AI/ML • Digital Workplace • Intune • Nexthink • Automation Architect
+    </p>
+
+    <a href="#projects"
+      class="mt-10 px-8 py-3 text-lg bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl glow transition">
+      Explore My Work 🚀
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="px-8 py-24 max-w-4xl mx-auto fade">
+    <h3 class="text-4xl font-bold text-purple-300 mb-6">About Me</h3>
+    <div class="glass p-6 rounded-xl leading-relaxed text-gray-200">
+      I’m Harish — a Hybrid GenAI + AI/ML + Digital Workplace Lead with 14+ years crafting
+      enterprise AI automation, LLM/RAG platforms, agentic workflows, and intelligent
+      endpoint ecosystems. I merge deep AI engineering with enterprise EUC leadership to
+      create AI-native operations at scale.
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="px-8 py-24 bg-black fade">
+    <h3 class="text-4xl font-bold text-purple-300 mb-10">Skills</h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <div class="glass p-6 rounded-xl glow transition">
+        <h4 class="text-xl font-bold text-white">GenAI & LLMs</h4>
+        <p class="mt-2 text-gray-300">RAG, LangChain, Vector DBs, Agents, LLMOps</p>
+      </div>
+
+      <div class="glass p-6 rounded-xl glow transition">
+        <h4 class="text-xl font-bold text-white">AI/ML</h4>
+        <p class="mt-2 text-gray-300">Deep Learning, NLP, CV, Time-Series, Predictive Models</p>
+      </div>
+
+      <div class="glass p-6 rounded-xl glow transition">
+        <h4 class="text-xl font-bold text-white">EUC + DEX</h4>
+        <p class="mt-2 text-gray-300">Intune, SCCM, Nexthink, Autopilot, Compliance</p>
+      </div>
+
+      <div class="glass p-6 rounded-xl glow transition">
+        <h4 class="text-xl font-bold text-white">Cloud & DevOps</h4>
+        <p class="mt-2 text-gray-300">AWS, Azure, Docker, K8s, GitHub Actions</p>
+      </div>
+
+      <div class="glass p-6 rounded-xl glow transition">
+        <h4 class="text-xl font-bold text-white">Data Engineering</h4>
+        <p class="mt-2 text-gray-300">SQL, ETL, Data Pipelines, Feature Engineering</p>
+      </div>
+
+      <div class="glass p-6 rounded-xl glow transition">
+        <h4 class="text-xl font-bold text-white">Automation</h4>
+        <p class="mt-2 text-gray-300">Python, PowerShell, ITSM APIs, Graph API</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="px-8 py-24 max-w-5xl mx-auto fade">
+    <h3 class="text-4xl font-bold text-purple-300 mb-10">Highlighted Projects</h3>
+
+    <div class="space-y-10">
+
+      <div class="glass p-6 rounded-xl glow transition">
+        <h4 class="text-xl font-bold text-white">AI-Powered Endpoint Anomaly Detection</h4>
+        <p class="text-gray-300 mt-2">
+          ML + Nexthink → Detected anomalies before failures → reduced P1 incidents by 15%.
+        </p>
+      </div>
+
+      <div class="glass p-6 rounded-xl glow transition">
+        <h4 class="text-xl font-bold text-white">Agentic AI for IT Automation</h4>
+        <p class="text-gray-300 mt-2">
+          Built troubleshooting, remediation & compliance agents using LLMs.
+        </p>
+      </div>
+
+      <div class="glass p-6 rounded-xl glow transition">
+        <h4 class="text-xl font-bold text-white">RAG Platform for IT Policies</h4>
+        <p class="text-gray-300 mt-2">
+          RAG system for SOP lookup, policy answering, and automated support copilots.
+        </p>
+      </div>
+
+      <div class="glass p-6 rounded-xl glow transition">
+        <h4 class="text-xl font-bold text-white">Predictive Patching Engine</h4>
+        <p class="text-gray-300 mt-2">
+          ML-based risk scoring improved patch success from 95% → 99%.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GENAI LAB -->
+  <section id="genai" class="px-8 py-24 bg-black border-t border-purple-700 fade">
+    <h3 class="text-4xl font-bold text-purple-300 mb-6">GenAI Lab</h3>
+    <p class="text-gray-300 mb-8">
+      A cyber-lab of my LLM, Agentic, and RAG workflows.
+    </p>
+
+    <ul class="list-disc ml-6 text-gray-300 space-y-4">
+      <li>Enterprise SOP RAG Chatbot</li>
+      <li>Intune Copilot (LLM Troubleshooting Engine)</li>
+      <li>Agentic Auto-Remediation Framework</li>
+      <li>Endpoint Compliance Engine (LLM + Policies)</li>
+      <li>Predictive Device Health Analytics</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="px-8 py-24 text-center fade bg-gray-900">
+    <h3 class="text-4xl font-bold text-purple-300 mb-6">Let’s Connect</h3>
+    <p class="mb-2 text-gray-300">📧 harish2112@gmail.com</p>
+    <p class="text-gray-300">🔗 linkedin.com/in/harry21</p>
+  </section>
+
+</body>
+</html>
